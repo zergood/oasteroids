@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/oasteroids.iml" filepath="$PROJECT_DIR$/oasteroids.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/oasteroids-core.iml" filepath="$PROJECT_DIR$/core/oasteroids-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/desktop/oasteroids-desktop.iml" filepath="$PROJECT_DIR$/desktop/oasteroids-desktop.iml" />
+    </modules>
+  </component>
+</project>
+
