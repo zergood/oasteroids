@@ -8,6 +8,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.scenes.scene2d.Stage;
 
 /**
  * Created with IntelliJ IDEA.
@@ -21,17 +22,21 @@ public class AbstractScreen implements Screen {
     protected final Oasteroids game;
     protected final BitmapFont font;
     protected final SpriteBatch batch;
+    protected final Stage stage;
 
 
     public AbstractScreen(Oasteroids game){
         this.game = game;
         this.font = new BitmapFont();
         this.batch = new SpriteBatch();
+        this.stage = new Stage();
     }
     @Override
     public void render(float delta) {
+        stage.act(delta);
         Gdx.gl.glClearColor( 0f, 0f, 0f, 1f );
         Gdx.gl.glClear( GL20.GL_COLOR_BUFFER_BIT );
+        stage.draw();
 
     }
 
